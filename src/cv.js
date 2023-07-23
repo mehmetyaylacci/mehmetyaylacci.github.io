@@ -13,23 +13,17 @@ const CV = () => {
         <Grid container columnSpacing={{ md: 3 }} sx={{ width: '100%', height: '100%', px: { xs: 3, md: 10 } }}>
             <Grid item xs={12} sm={12} md={4} sx={{ marginTop: '5vh' }}>
                 <Box sx={{ flex: 1, height: '90vh' }}>
-                    <StoryOne>
-
-                    </StoryOne>
+                    <StoryOne />
                 </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} sx={{ marginTop: '5vh' }}>
                 <Box sx={{ flex: 1, height: '90vh' }}>
-                    <StoryTwo>
-
-                    </StoryTwo>
+                    <StoryTwo />
                 </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} sx={{ marginTop: '5vh', paddingBottom: '5vh' }}>
                 <Box sx={{ flex: 1, height: '90vh' }}>
-                    <StoryThree>
-
-                    </StoryThree>
+                    <StoryThree />
                 </Box>
             </Grid>
         </Grid>

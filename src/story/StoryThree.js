@@ -2,14 +2,15 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from '@mui/material';
 import Telegram from './Telegram';
 
 /**
  * 
  */
-const StoryThree = (props) => {
+const StoryThree = () => {
     return (
         <Card 
             sx={{ 
@@ -38,9 +39,7 @@ const StoryThree = (props) => {
                 }}
             /> */}
             <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <Telegram>
-                    
-                </Telegram>
+                <Telegram />
                 {/* <CardMedia
                     component="img"
                     src={require('./google.png')}
@@ -80,8 +79,13 @@ const StoryThree = (props) => {
                 <Typography gutterBottom variant="h6" component="div" textAlign='center' pt='10px' mx='20px' sx={{ fontSize: { xs: '4vw', sm: '4vw', md: '1.3vw' } }}>
                     Advanced React
                 </Typography> */}
+                {/* <Button color="primary" variant="contained" fullWidth type="submit" sx={{mt: 10}} >
+                    <Link href="https://drive.google.com/drive/folders/15Tyy0VK4gCK7sQKqP78JSK9MGCxltDzB?usp=sharing" underline="none" color="white">
+                        Portfolio
+                    </Link>
+                </Button> */}
             </CardContent>
-        </Card>
+        </Card>      
     );
 }
 

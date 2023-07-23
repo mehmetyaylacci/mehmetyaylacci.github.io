@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 /**
  * 
@@ -48,8 +49,8 @@ const StoryTwo = (props) => {
                     }}
                 />
                 <Typography gutterBottom variant="h6" component="div" textAlign='center' pt='10px' mx='20px' sx={{ fontSize: { xs: '4vw', sm: '4vw', md: '1.3vw' } }}>
-                    Foundations of Business Intelligence<br/>
-                    The Path to Insights: Data Models and Pipelines
+                    <Link href='https://www.coursera.org/account/accomplishments/verify/D9JDP2A5BD2H' color="inherit">Foundations of Business Intelligence</Link><br/>
+                    <Link href='https://www.coursera.org/account/accomplishments/verify/KPN42ZFDZLC8' color="inherit">The Path to Insights: Data Models and Pipelines</Link>
                 </Typography>
                 <CardMedia
                     component="img"
@@ -62,7 +63,7 @@ const StoryTwo = (props) => {
                     }}
                 />
                 <Typography gutterBottom variant="h6" component="div" textAlign='center' pt='10px' mx='20px' sx={{ fontSize: { xs: '4vw', sm: '4vw', md: '1.3vw' } }}>
-                    Big Data Emerging Technologies
+                    <Link href='https://www.coursera.org/account/accomplishments/verify/VSXTP2JZHA6E' color="inherit">Big Data Emerging Technologies</Link>
                 </Typography>
                 <CardMedia
                     component="img"
@@ -75,7 +76,7 @@ const StoryTwo = (props) => {
                     }}
                 />
                 <Typography gutterBottom variant="h6" component="div" textAlign='center' pt='10px' mx='20px' sx={{ fontSize: { xs: '4vw', sm: '4vw', md: '1.3vw' } }}>
-                    Advanced React
+                    <Link href='https://www.coursera.org/account/accomplishments/verify/UKZBM658CLSH' color="inherit">Advanced React</Link>
                 </Typography>
             </CardContent>
         </Card>

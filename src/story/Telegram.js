@@ -3,11 +3,9 @@ import { useFormik } from "formik";
 import { TextField, Button, Typography, Box, Select, MenuItem, CircularProgress, FormControl, InputLabel } from '@mui/material';
 import * as Yup from 'yup';
 import useSubmit from "../hooks/useSubmit";
-import {useAlertContext} from "../context/alertContext";
 
 const Telegram = () => {
-  const {isLoading, response, submit} = useSubmit();
-  const { onOpen } = useAlertContext();
+  const {submit} = useSubmit();
 
   const formik = useFormik({
     initialValues: {
@@ -16,17 +14,7 @@ const Telegram = () => {
       message: ''
     },
     onSubmit: (values) => {
-      submit(values.email, values)
-        .then(() => {
-          if (response.type == 'error'){
-            onOpen('error', response.message)
-          }
-          else {
-            onOpen('success', response.message)
-            formik.resetForm()
-          }
-        })
-        .catch(() => onOpen('error', 'Servers cannot be reached!'))
+      submit(values.email, values).then(() => {formik.resetForm()})
     },
     validationSchema: Yup.object({
       name: Yup.string().required('Required'),
@@ -46,7 +34,7 @@ const Telegram = () => {
       }}
     >
       <Typography variant="h4" sx={{ mb: 2 }}>
-        Contact me
+        Contact Me
       </Typography>
       <Box
         component="form"
@@ -103,7 +91,7 @@ const Telegram = () => {
           helperText={formik.touched.message && formik.errors.message}
           sx={{ mb: 2 }}
         />
-        <Button color="primary" variant="contained" fullWidth type="submit" endIcon={formik.isSubmitting ? <CircularProgress size="1rem" /> : null}>
+        <Button color="primary" variant="contained" fullWidth type="submit" >
           Submit
         </Button>
       </Box>
